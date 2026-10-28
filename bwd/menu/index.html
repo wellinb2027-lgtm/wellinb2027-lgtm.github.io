@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Restaurant Menus</title>
+
+    <style>
+        body {
+            background-color: #f3eee5;
+            font-family: Georgia, serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #573b2a;
+            font-size: 36px;
+        }
+
+        .menu {
+            width: 400px;
+            height: 550px;
+            box-sizing: border-box;
+            margin: 25px auto;
+            padding: 25px;
+            border: 5px solid #7b5638;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            text-shadow: 1px 1px 4px #000000;
+            overflow: auto;
+        }
+
+        .menu h2 {
+            font-size: 30px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        .menu h3 {
+            font-size: 21px;
+            margin-top: 25px;
+        }
+
+        .menu p {
+            font-size: 16px;
+            margin: 14px 0;
+        }
+
+        .breakfast {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.48),
+                rgba(0, 0, 0, 0.48)
+            ), url("https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800");
+        }
+
+        .lunch {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ), url("https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800");
+            background-position: center;
+        }
+
+        .dinner {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ), url("https://images.unsplash.com/photo-1547592180-85f173990554?w=800");
+            background-repeat: no-repeat;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The Cozy Corner Restaurant</h1>
+
+    <!-- Breakfast Menu -->
+    <div class="menu breakfast">
+        <h2>Breakfast Menu</h2>
+
+        <h3>Food</h3>
+        <p>Classic Pancakes <span class="price">$8</span></p>
+        <p>French Toast <span class="price">$9</span></p>
+        <p>Eggs and Bacon <span class="price">$10</span></p>
+        <p>Breakfast Burrito <span class="price">$11</span></p>
+        <p>Fresh Fruit Bowl <span class="price">$6</span></p>
+
+        <h3>Drinks</h3>
+        <p>Coffee - $3</p>
+        <p>Orange Juice - $3</p>
+        <p>Hot Chocolate - $4</p>
+    </div>
+
+    <!-- Lunch Menu -->
+    <div class="menu lunch">
+        <h2>Lunch Menu</h2>
+
+        <h3>Main Courses</h3>
+        <p>Classic Cheeseburger - $12</p>
+        <p>Grilled Chicken Sandwich - $11</p>
+        <p>Caesar Salad - $9</p>
+        <p>Tomato Soup and Grilled Cheese - $10</p>
+        <p>Chicken Wrap - $10</p>
+
+        <h3>Drinks</h3>
+        <p>Lemonade - $3</p>
+        <p>Iced Tea - $3</p>
+        <p>Soft Drink - $2</p>
+    </div>
+
+    <!-- Dinner Menu -->
+    <div class="menu dinner">
+        <h2>Dinner Menu</h2>
+
+        <h3>Main Courses</h3>
+        <p>Grilled Steak - $24</p>
+        <p>Roasted Chicken - $18</p>
+        <p>Spaghetti Marinara - $15</p>
+        <p>Baked Salmon - $22</p>
+        <p>Vegetable Pasta - $16</p>
+
+        <h3>Desserts and Drinks</h3>
+        <p>Chocolate Cake - $7</p>
+        <p>Apple Pie - $6</p>
+        <p>Fresh Lemonade - $3</p>
+    </div>
+
+</body>
+</html>
