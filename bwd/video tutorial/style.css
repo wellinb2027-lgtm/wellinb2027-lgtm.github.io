@@ -1,0 +1,150 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f2f6f8;
+    color: #243342;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(135deg, #123b5d, #167b8a);
+    color: white;
+    padding: 48px 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 8px 0;
+    font-size: 2.4rem;
+}
+
+.eyebrow {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.subtitle {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Main content and introduction */
+.content {
+    width: min(1000px, 92%);
+    margin: 32px auto;
+}
+
+.intro, .finish, .video-section {
+    background: white;
+    border-radius: 12px;
+    padding: 26px;
+    margin-bottom: 24px;
+    box-shadow: 0 3px 12px rgba(20, 48, 65, 0.08);
+}
+
+h2 {
+    color: #14566b;
+    margin-top: 0;
+}
+
+a {
+    color: #087b91;
+    font-weight: bold;
+}
+
+/* Tutorial step cards */
+.step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 3px 12px rgba(20, 48, 65, 0.08);
+}
+
+.step-number {
+    display: inline-block;
+    color: #087b91;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.step figure {
+    margin: 0;
+}
+
+.step img {
+    display: block;
+    width: 100%;
+    min-height: 190px;
+    object-fit: contain;
+    background: #e8eef1;
+    border: 2px dashed #8ba5b2;
+    border-radius: 8px;
+}
+
+figcaption, .source-note {
+    color: #607582;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+code {
+    background: #edf3f5;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+/* Responsive video player */
+.video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #102a3a;
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background: #123b5d;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Stack the tutorial cards on smaller screens */
+@media (max-width: 700px) {
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .step {
+        grid-template-columns: 1fr;
+    }
+}
