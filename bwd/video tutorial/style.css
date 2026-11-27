@@ -1,4 +1,4 @@
-/* General page styling */
+
 * {
     box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 .site-header {
     background: linear-gradient(135deg, #123b5d, #167b8a);
     color: white;
@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
 }
 
-/* Main content and introduction */
+
 .content {
     width: min(1000px, 92%);
     margin: 32px auto;
@@ -60,7 +60,7 @@ a {
     font-weight: bold;
 }
 
-/* Tutorial step cards */
+
 .step {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,7 +107,7 @@ code {
     padding: 2px 5px;
 }
 
-/* Responsive video player */
+
 .video-frame {
     position: relative;
     width: 100%;
@@ -125,7 +125,7 @@ code {
     border: 0;
 }
 
-/* Footer */
+
 footer {
     background: #123b5d;
     color: white;
@@ -138,7 +138,7 @@ footer p {
     margin: 0;
 }
 
-/* Stack the tutorial cards on smaller screens */
+
 @media (max-width: 700px) {
     .site-header h1 {
         font-size: 1.8rem;
